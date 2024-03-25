@@ -1,0 +1,24 @@
+<div class="container-standard">
+    <h2 class="title-standard">Dashboard</h2>
+    <div class="container-dashboard">
+        <a href="/thoughts/add" class="blue-btn create-thought create-thought-btn ">Criar Pensamento</a>
+        <h3 id="title-your-thoughts">Seus pensamentos:</h3>
+        {{#each thoughts}}
+           <ul>
+        <li class="my-thoughts">
+            <span>{{this.title}}</span>
+            <span class="thoughts-ations">
+                <a href="/thoughts/update/{{this.id}}" class="edit-thoughts-btn">Editar</a>
+                <form action="/thoughts/remove" method="POST">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <input type="submit" class="red-btn delete-thoughts-btn" value="Excluir">
+                </form>
+            </span>
+        </li>
+           </ul>
+        {{/each}}
+        {{#if emptyThoughts}}
+        <p class="paragraph-standard">Você ainda não tem nenhum pensamento cadastrado, comece por <a class="link" href="/thoughts/add">aqui.</a></p>
+        {{/if}}
+    </div>
+</div>

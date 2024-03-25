@@ -1,0 +1,29 @@
+<div class="container-standard">
+    <h1 class="title-standard">Cadastre-se<span class="point">:</span></h1>
+    
+        <form action="/register" method="POST">
+            <div class="form-control-container">
+                <div class="form-control">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" required>
+
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-control">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" required>
+
+                </div>
+                <div class="form-control">
+                    <label for="confirmPassword">Confirme sua senha:</label>
+                    <input type="password" name="confirmPassword" required>
+                </div>
+            </div>
+            <input type="submit" class="register-btn blue-btn"value="Cadastrar">
+        </form>
+    
+    <p class="paragraph-standard">Já possui uma conta? <a href="/login" class="link">Clique aqui!</a></p>
+</div>

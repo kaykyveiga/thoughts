@@ -1,0 +1,15 @@
+<div class="container-standard">
+    <h1 class="title-standard">Deseja editar seu pensamento?</h1>
+    <div class="container-dashboard">
+        <p class="paragraph-standard">Edite seu pensamento abaixo:</p>
+        <form action="/thoughts/update" method="post">
+        <input type="hidden" name="id" value="{{thoughts.id}}">
+            <div class="form-control form-control-thought">
+                <label for="title">Pensamento:</label>
+                <input id="create-thought-input" type="text" name="title" value="{{thoughts.title}}" required>
+            </div>
+            <input class="blue-btn create-thought" type="submit" value="Editar pensamento">
+        </form>
+        <a href="/thoughts/dashboard" class="red-btn back-dashboard-btn">Voltar</a>
+    </div>
+</div>

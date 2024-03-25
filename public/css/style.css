@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #272A37;
+}
+
+.container {
+    text-align: center;
+    margin: 3rem;
+}
+
+#navbar {
+    text-align: right;
+    margin: 1rem;
+}
+
+li {
+    display: inline-block;
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.alertMessage {
+    padding: 1rem;
+    background: #ff0000;
+    color: #ffff;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+    max-width: 50%;
+}
+
+.successMessage {
+    padding: 1rem;
+    background: #33ff00;
+    color: #ffff;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 0 auto 1rem;
+    max-width: 50%;
+}
+
+#home-btn {
+    color: #6C7382;
+}
+
+.btn {
+    padding: .5rem 2rem;
+    color: #fff;
+    border-radius: 2rem;
+    border: transparent;
+    transition: box-shadow 0.5s ease;
+}
+
+.gray-btn {
+    background: #555B69;
+}
+
+.gray-btn:hover {
+    box-shadow: 0 0 5px 1px #ffffff80;
+}
+
+.blue-btn {
+    background: #1D90F5;
+}
+
+.blue-btn:hover {
+    box-shadow: 0 0 5px 1px rgba(52, 152, 219, 0.5);
+}
+
+.red-btn {
+    background: #ff0000;
+}
+
+.red-btn:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 0, 0, 0.877);
+}
+
+.container-standard {
+    background-color: #1f212b4d;
+    border-radius: 3rem;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.title-standard {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.point {
+    color: #1D90F5;
+    border-radius: 50rem;
+
+}
+
+.form-control-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control label {
+    color: #1D90F5;
+}
+
+.form-control input, .all-thoughts {
+    padding: 1rem 1rem;
+    width: 15rem;
+    margin: 1rem 0;
+    background: #3D404B;
+    color: #ffffff;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.login-btn,
+.register-btn,
+.logout-btn,
+.create-thought,
+.back-dashboard-btn {
+    margin: 1rem;
+    padding: .7rem 2rem;
+    color: #fff;
+    border-radius: 2rem;
+    border: transparent;
+    font-size: 1rem;
+}
+
+.paragraph-standard {
+    margin: 1rem;
+    color: #ABB8C8;
+    font-weight: 100;
+}
+
+.link {
+    color: #1F76C6;
+}
+
+.container-dashboard {
+    text-align: left;
+}
+
+.form-control-thought {
+    margin-left: 1rem;
+    align-items: start;
+}
+
+#create-thought-input {
+    width: 93%;
+    margin-bottom: .5rem;
+}
+
+.create-thought-btn {
+    margin: 0 0 2rem 0;
+}
+
+.create-thought {
+    margin-bottom: 2rem;
+}
+
+#title-your-thoughts {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.my-thoughts {
+    padding: 1rem 1rem;
+    width: 95%;
+    margin: 1rem 0;
+    background: #3D404B;
+    color: #ffffff;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.thoughts-ations {
+    display: flex;
+}
+
+.delete-thoughts-btn,
+.edit-thoughts-btn {
+    margin: 1rem 1rem 0 0;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .5rem .7rem;
+    color: #ffffff;
+    border: transparent;
+    border-radius: .5rem;
+}
+
+.edit-thoughts-btn , .search-btn{
+    background: #33ff00;
+}
+.all-thoughts{
+    width: 95%;
+}
+
+#search-thoughts {
+    width: 87%;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: transparent;
+    margin: .5rem 0 2rem 0;
+}
+.search-btn {
+    color: #fff;
+    border-radius: 2rem;
+    border: transparent;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-left: .3rem;
+    margin-top: -2rem;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.order-by {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: .5rem;
+}
+
+.order-container button {
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.order-container button:hover {
+    color: #1F76C6;
+}
+
+#clear-order {
+    color: #1F76C6;
+}
+
+.published-thoughts {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.author-thoughts {
+    font-size: .8rem;
+    color: #1D90F5;
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    background: #000000;
+    color: #ffffff;
+    bottom: 0;
+    text-align: center;
+    padding: .4rem;
+}

@@ -1,0 +1,14 @@
+<div class="container-standard">
+    <h1 class="title-standard">No que você está pensando?</h1>
+    <div class="container-dashboard">
+        <p class="paragraph-standard">Digite seu pensamento abaixo:</p>
+        <form action="/thoughts/add" method="post">
+            <div class="form-control form-control-thought">
+                <label for="title">Pensamento:</label>
+                <input id="create-thought-input" type="text" name="title" required>
+            </div>
+            <input class="blue-btn create-thought" type="submit" value="Criar pensamento">
+        </form>
+        <a href="/thoughts/dashboard" class="red-btn back-dashboard-btn">Voltar</a>
+    </div>
+</div>
